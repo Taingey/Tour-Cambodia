@@ -657,6 +657,14 @@
         <p>Copyright &copy; 2023 Tour Cambodia. All rights reserved.</p>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script>
+      document.querySelector(".menu").addEventListener("click", () => {
+          document.querySelector(".navigation-bar").classList.toggle("active");
+      });
+
+      document.querySelector(".navigation-bar-menu-X").addEventListener("click", () => {
+      document.querySelector(".navigation-bar").classList.remove("active");
+      });
+    </script>
   </body>
 </html>
